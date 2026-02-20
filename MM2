@@ -75,10 +75,7 @@ local Title_16 = Instance.new("TextLabel")
 local TopFrame = Instance.new("Frame")
 local Title_17 = Instance.new("TextLabel")
 local MinimizeButton = Instance.new("TextButton")
--- NEW: Toggle button to show the GUI
 local ToggleGuiButton = Instance.new("TextButton")
-
--- GUI Properties
 local darkPurple = Color3.fromRGB(75, 0, 130)
 local darkGray = Color3.fromRGB(40, 40, 40)
 local mediumGray = Color3.fromRGB(50, 50, 50)
