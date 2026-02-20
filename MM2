@@ -551,7 +551,7 @@ Title_8.BorderSizePixel = 0
 Title_8.Position = UDim2.new(0.161490679, 0, 0, 0)
 Title_8.Size = UDim2.new(0.838509321, 0, 1, 0)
 Title_8.Font = Enum.Font.Gotham
-Title_8.Text = "Gun Grabber + ESP"
+Title_8.Text = "Auto GrabGunv2"
 Title_8.TextColor3 = white
 Title_8.TextSize = 14.000
 Title_8.TextWrapped = true
@@ -914,7 +914,7 @@ Title_17.BorderSizePixel = 0
 Title_17.Position = UDim2.new(0.0199999996, 0, 0, 0)
 Title_17.Size = UDim2.new(0.405684769, 0, 1, 0)
 Title_17.Font = Enum.Font.Gotham
-Title_17.Text = "MM2 SCRIPT - By FaresV1"
+Title_17.Text = "MM2 SCRIPT - By FaresV2"
 Title_17.TextColor3 = white
 Title_17.TextSize = 14.000
 Title_17.TextXAlignment = Enum.TextXAlignment.Left
@@ -1071,16 +1071,34 @@ coroutine.wrap(HREBVA_fake_script)()
 
 local function WLZBXL_fake_script() -- SetActivation.Script 
 	local script = Instance.new('LocalScript', SetActivation)
-	script.Parent.MouseButton1Down:connect(function()	
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(script.Parent.Parent.WalkspeedTB.Text) or 16
+	local Players = game:GetService("Players")
+	local player = Players.LocalPlayer
+
+	local desiredSpeed = 16
+	local running = false
+
+	script.Parent.MouseButton1Down:Connect(function()
+		desiredSpeed = tonumber(script.Parent.Parent.WalkspeedTB.Text) or 16
+		running = true
+
+		task.spawn(function()
+			while running do
+				if player.Character and player.Character:FindFirstChild("Humanoid") then
+					player.Character.Humanoid.WalkSpeed = desiredSpeed
+				end
+				task.wait(0.5)
+			end
+		end)
 	end)
 end
 coroutine.wrap(WLZBXL_fake_script)()
 
+
 local function YRYWA_fake_script() -- ResetActivation.Script 
 	local script = Instance.new('LocalScript', ResetActivation)
-	script.Parent.MouseButton1Down:connect(function()	
-		game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+	script.Parent.MouseButton1Down:Connect(function()	
+		local humanoid = game.Players.LocalPlayer.Character.Humanoid
+		humanoid.WalkSpeed = 16
 		script.Parent.Parent.WalkspeedTB.Text = "Insert Walkspeed"
 	end)
 end
@@ -1333,66 +1351,46 @@ local function QHWFTYB_fake_script() -- Kill Murderer Script
 end
 coroutine.wrap(QHWFTYB_fake_script)()
 
-local function GUN_GRABBER_SCRIPT() 
-    local script = Instance.new('LocalScript', Activation_8)
-    local espActive = false
-    local gunEspConnection = nil
-    local gunEspPart = nil
+local function AUTO_GRAB_GUN_SCRIPT()
+    local script = Instance.new("LocalScript", Activation_8)
+    local Players = game:GetService("Players")
+    local RunService = game:GetService("RunService")
+    local player = Players.LocalPlayer
 
-    local function updateGunEsp()
-        local gunDrop = workspace:FindFirstChild("GunDrop", true)
-        if gunDrop and gunDrop:IsA("Part") then
-            if not gunEspPart or gunEspPart.Parent ~= gunDrop then
-                if gunEspPart then gunEspPart:Destroy() end
-                gunEspPart = Instance.new("BoxHandleAdornment")
-                gunEspPart.Name = "GunESP"
-                gunEspPart.Adornee = gunDrop
-                gunEspPart.AlwaysOnTop = true
-                gunEspPart.ZIndex = 5
-                gunEspPart.Size = gunDrop.Size + Vector3.new(0.5, 0.5, 0.5)
-                gunEspPart.Color3 = Color3.new(0, 0, 1) -- Blue
-                gunEspPart.Transparency = 0.5
-                gunEspPart.Parent = gunDrop
-            end
-            gunEspPart.Visible = true
-        else
-            if gunEspPart then
-                gunEspPart.Visible = false
-            end
-        end
+    local running = false
+
+    local function findGun()
+        return workspace:FindFirstChild("GunDrop", true)
     end
 
     script.Parent.MouseButton1Click:Connect(function()
-        espActive = not espActive
-        toggleButton(script.Parent, espActive)
+        running = not running
 
-        if espActive then
-            -- Teleport immediately
-            local gunDrop = workspace:FindFirstChild("GunDrop", true)
-            if gunDrop and gunDrop:IsA("Part") then
-                local player = game.Players.LocalPlayer
-                if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-                    player.Character.HumanoidRootPart.CFrame = gunDrop.CFrame
+        toggleButton(script.Parent, running)
+
+        task.spawn(function()
+            while running do
+                local char = player.Character
+                if char and char:FindFirstChild("HumanoidRootPart") then
+                    local hrp = char.HumanoidRootPart
+                    local oldPos = hrp.CFrame
+
+                    local gun = findGun()
+                    if gun and gun:IsA("BasePart") then
+                        hrp.CFrame = gun.CFrame + Vector3.new(0, 2, 0)
+                        task.wait(0.3)
+                        hrp.CFrame = oldPos
+                        running = false
+                        toggleButton(script.Parent, false)
+                        break
+                    end
                 end
-            else
-                 game.StarterGui:SetCore("SendNotification", {Title = "MESSAGE! ", Text = "مفيش مسدس جرب بعدين"})
+                task.wait(0.5) 
             end
-            
-            
-            gunEspConnection = game:GetService("RunService").RenderStepped:Connect(updateGunEsp)
-        else
-            if gunEspConnection then
-                gunEspConnection:Disconnect()
-                gunEspConnection = nil
-            end
-            if gunEspPart then
-                gunEspPart:Destroy()
-                gunEspPart = nil
-            end
-        end
+        end)
     end)
 end
-coroutine.wrap(GUN_GRABBER_SCRIPT)()
+coroutine.wrap(AUTO_GRAB_GUN_SCRIPT)()
 
 local function GTOJAZG_fake_script() 
 	local script = Instance.new('LocalScript', Activation_9)
