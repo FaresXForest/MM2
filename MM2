@@ -76,6 +76,7 @@ local TopFrame = Instance.new("Frame")
 local Title_17 = Instance.new("TextLabel")
 local MinimizeButton = Instance.new("TextButton")
 local ToggleGuiButton = Instance.new("TextButton")
+
 local darkPurple = Color3.fromRGB(75, 0, 130)
 local darkGray = Color3.fromRGB(40, 40, 40)
 local mediumGray = Color3.fromRGB(50, 50, 50)
@@ -86,7 +87,6 @@ local green = Color3.fromRGB(52, 255, 52)
 MM2AdminPanel.Name = "MM2AdminPanel"
 MM2AdminPanel.Parent = game:GetService("CoreGui")
 MM2AdminPanel.ResetOnSpawn = false
-
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = MM2AdminPanel
 MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -97,7 +97,6 @@ MainFrame.BorderSizePixel = 0
 MainFrame.ClipsDescendants = true
 MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 MainFrame.Size = UDim2.new(0, 387, 0, 229)
-
 StartFrame.Name = "StartFrame"
 StartFrame.Parent = MainFrame
 StartFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -108,7 +107,6 @@ StartFrame.Image = "rbxassetid://3570695787"
 StartFrame.ImageColor3 = darkPurple
 StartFrame.ScaleType = Enum.ScaleType.Slice
 StartFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-
 BottomFrame.Name = "BottomFrame"
 BottomFrame.Parent = MainFrame
 BottomFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -118,7 +116,6 @@ BottomFrame.BorderSizePixel = 0
 BottomFrame.ClipsDescendants = true
 BottomFrame.Position = UDim2.new(0.5, 0, 1.5, 0)
 BottomFrame.Size = UDim2.new(0, 387, 0, 229)
-
 Tab1.Name = "Tab1"
 Tab1.Parent = BottomFrame
 Tab1.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -131,7 +128,6 @@ Tab1.Font = Enum.Font.Gotham
 Tab1.Text = "MAIN"
 Tab1.TextColor3 = white
 Tab1.TextSize = 14.000
-
 Tab2.Name = "Tab2"
 Tab2.Parent = BottomFrame
 Tab2.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -144,7 +140,6 @@ Tab2.Font = Enum.Font.Gotham
 Tab2.Text = "PLAYER"
 Tab2.TextColor3 = white
 Tab2.TextSize = 14.000
-
 Tab4.Name = "Tab4"
 Tab4.Parent = BottomFrame
 Tab4.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -157,7 +152,6 @@ Tab4.Font = Enum.Font.Gotham
 Tab4.Text = "TELEPORT"
 Tab4.TextColor3 = white
 Tab4.TextSize = 14.000
-
 PlayerFrame.Name = "PlayerFrame"
 PlayerFrame.Parent = BottomFrame
 PlayerFrame.Active = true
@@ -169,7 +163,6 @@ PlayerFrame.Size = UDim2.new(0, 367, 0, 158)
 PlayerFrame.Visible = false
 PlayerFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
 PlayerFrame.ScrollBarThickness = 3
-
 Fly.Name = "Fly"
 Fly.Parent = PlayerFrame
 Fly.BackgroundColor3 = lightGray
@@ -179,7 +172,6 @@ Fly.BorderSizePixel = 0
 Fly.ClipsDescendants = true
 Fly.Position = UDim2.new(0.0199999996, 0, 0.0199999996, 0)
 Fly.Size = UDim2.new(0, 161, 0, 20)
-
 Activation.Name = "Activation"
 Activation.Parent = Fly
 Activation.BackgroundColor3 = mediumGray
@@ -189,7 +181,6 @@ Activation.Font = Enum.Font.Gotham
 Activation.Text = ""
 Activation.TextColor3 = green
 Activation.TextSize = 18.000
-
 Title.Name = "Title"
 Title.Parent = Fly
 Title.BackgroundColor3 = lightGray
@@ -204,7 +195,6 @@ Title.TextColor3 = white
 Title.TextSize = 14.000
 Title.TextWrapped = true
 Title.TextXAlignment = Enum.TextXAlignment.Left
-
 Noclip.Name = "Noclip"
 Noclip.Parent = PlayerFrame
 Noclip.BackgroundColor3 = lightGray
@@ -213,7 +203,6 @@ Noclip.BorderSizePixel = 0
 Noclip.ClipsDescendants = true
 Noclip.Position = UDim2.new(0.0199999996, 0, 0.126000002, 0)
 Noclip.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_2.Name = "Activation"
 Activation_2.Parent = Noclip
 Activation_2.BackgroundColor3 = mediumGray
@@ -223,7 +212,6 @@ Activation_2.Font = Enum.Font.Gotham
 Activation_2.Text = ""
 Activation_2.TextColor3 = green
 Activation_2.TextSize = 18.000
-
 Title_2.Name = "Title"
 Title_2.Parent = Noclip
 Title_2.BackgroundColor3 = lightGray
@@ -238,7 +226,6 @@ Title_2.TextColor3 = white
 Title_2.TextSize = 14.000
 Title_2.TextWrapped = true
 Title_2.TextXAlignment = Enum.TextXAlignment.Left
-
 Walkspeed.Name = "Walkspeed"
 Walkspeed.Parent = PlayerFrame
 Walkspeed.BackgroundColor3 = lightGray
@@ -247,7 +234,6 @@ Walkspeed.BorderSizePixel = 0
 Walkspeed.ClipsDescendants = true
 Walkspeed.Position = UDim2.new(0.0199999996, 0, 0.335999995, 0)
 Walkspeed.Size = UDim2.new(0, 161, 0, 42)
-
 SetActivation.Name = "SetActivation"
 SetActivation.Parent = Walkspeed
 SetActivation.BackgroundColor3 = darkGray
@@ -258,7 +244,6 @@ SetActivation.Font = Enum.Font.Gotham
 SetActivation.Text = "Set"
 SetActivation.TextColor3 = white
 SetActivation.TextSize = 14.000
-
 WalkspeedTB.Name = "WalkspeedTB"
 WalkspeedTB.Parent = Walkspeed
 WalkspeedTB.BackgroundColor3 = darkGray
@@ -270,7 +255,6 @@ WalkspeedTB.Font = Enum.Font.Gotham
 WalkspeedTB.Text = "Insert Walkspeed"
 WalkspeedTB.TextColor3 = white
 WalkspeedTB.TextSize = 14.000
-
 ResetActivation.Name = "ResetActivation"
 ResetActivation.Parent = Walkspeed
 ResetActivation.BackgroundColor3 = darkGray
@@ -281,7 +265,6 @@ ResetActivation.Font = Enum.Font.Gotham
 ResetActivation.Text = "Reset"
 ResetActivation.TextColor3 = white
 ResetActivation.TextSize = 14.000
-
 JumpPower.Name = "JumpPower"
 JumpPower.Parent = PlayerFrame
 JumpPower.BackgroundColor3 = lightGray
@@ -290,7 +273,6 @@ JumpPower.BorderSizePixel = 0
 JumpPower.ClipsDescendants = true
 JumpPower.Position = UDim2.new(0.0199999996, 0, 0.537, 0)
 JumpPower.Size = UDim2.new(0, 161, 0, 42)
-
 SetActivation_2.Name = "SetActivation"
 SetActivation_2.Parent = JumpPower
 SetActivation_2.BackgroundColor3 = darkGray
@@ -301,7 +283,6 @@ SetActivation_2.Font = Enum.Font.Gotham
 SetActivation_2.Text = "Set"
 SetActivation_2.TextColor3 = white
 SetActivation_2.TextSize = 14.000
-
 JumpPowerTB.Name = "JumpPowerTB"
 JumpPowerTB.Parent = JumpPower
 JumpPowerTB.BackgroundColor3 = darkGray
@@ -313,7 +294,6 @@ JumpPowerTB.Font = Enum.Font.Gotham
 JumpPowerTB.Text = "Insert JumpPower"
 JumpPowerTB.TextColor3 = white
 JumpPowerTB.TextSize = 14.000
-
 ResetActivation_2.Name = "ResetActivation"
 ResetActivation_2.Parent = JumpPower
 ResetActivation_2.BackgroundColor3 = darkGray
@@ -324,7 +304,6 @@ ResetActivation_2.Font = Enum.Font.Gotham
 ResetActivation_2.Text = "Reset"
 ResetActivation_2.TextColor3 = white
 ResetActivation_2.TextSize = 14.000
-
 InfiniteJump.Name = "InfiniteJump"
 InfiniteJump.Parent = PlayerFrame
 InfiniteJump.BackgroundColor3 = lightGray
@@ -333,7 +312,6 @@ InfiniteJump.BorderSizePixel = 0
 InfiniteJump.ClipsDescendants = true
 InfiniteJump.Position = UDim2.new(0.0199999996, 0, 0.229000002, 0)
 InfiniteJump.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_3.Name = "Activation"
 Activation_3.Parent = InfiniteJump
 Activation_3.BackgroundColor3 = mediumGray
@@ -343,7 +321,6 @@ Activation_3.Font = Enum.Font.Gotham
 Activation_3.Text = ""
 Activation_3.TextColor3 = green
 Activation_3.TextSize = 18.000
-
 Title_3.Name = "Title"
 Title_3.Parent = InfiniteJump
 Title_3.BackgroundColor3 = lightGray
@@ -358,7 +335,6 @@ Title_3.TextColor3 = white
 Title_3.TextSize = 14.000
 Title_3.TextWrapped = true
 Title_3.TextXAlignment = Enum.TextXAlignment.Left
-
 Tab3.Name = "Tab3"
 Tab3.Parent = BottomFrame
 Tab3.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -371,7 +347,6 @@ Tab3.Font = Enum.Font.Gotham
 Tab3.Text = "VISUALS"
 Tab3.TextColor3 = white
 Tab3.TextSize = 14.000
-
 MainFrame_2.Name = "MainFrame"
 MainFrame_2.Parent = BottomFrame
 MainFrame_2.Active = true
@@ -382,7 +357,6 @@ MainFrame_2.Position = UDim2.new(0.5, 0, 0.611353695, 0)
 MainFrame_2.Size = UDim2.new(0, 367, 0, 158)
 MainFrame_2.CanvasSize = UDim2.new(0, 0, 1, 0)
 MainFrame_2.ScrollBarThickness = 3
-
 CoinFarm.Name = "CoinFarm"
 CoinFarm.Parent = MainFrame_2
 CoinFarm.BackgroundColor3 = lightGray
@@ -392,7 +366,6 @@ CoinFarm.BorderSizePixel = 0
 CoinFarm.ClipsDescendants = true
 CoinFarm.Position = UDim2.new(0.0199999996, 0, 0.0199999996, 0)
 CoinFarm.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_4.Name = "Activation"
 Activation_4.Parent = CoinFarm
 Activation_4.BackgroundColor3 = mediumGray
@@ -402,7 +375,6 @@ Activation_4.Font = Enum.Font.Gotham
 Activation_4.Text = ""
 Activation_4.TextColor3 = green
 Activation_4.TextSize = 18.000
-
 Title_4.Name = "Title"
 Title_4.Parent = CoinFarm
 Title_4.BackgroundColor3 = lightGray
@@ -417,7 +389,6 @@ Title_4.TextColor3 = white
 Title_4.TextSize = 14.000
 Title_4.TextWrapped = true
 Title_4.TextXAlignment = Enum.TextXAlignment.Left
-
 XRay.Name = "XRay"
 XRay.Parent = MainFrame_2
 XRay.BackgroundColor3 = lightGray
@@ -426,7 +397,6 @@ XRay.BorderSizePixel = 0
 XRay.ClipsDescendants = true
 XRay.Position = UDim2.new(0.0199999996, 0, 0.123999998, 0)
 XRay.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_5.Name = "Activation"
 Activation_5.Parent = XRay
 Activation_5.BackgroundColor3 = mediumGray
@@ -436,7 +406,6 @@ Activation_5.Font = Enum.Font.Gotham
 Activation_5.Text = ""
 Activation_5.TextColor3 = green
 Activation_5.TextSize = 18.000
-
 Title_5.Name = "Title"
 Title_5.Parent = XRay
 Title_5.BackgroundColor3 = lightGray
@@ -451,7 +420,6 @@ Title_5.TextColor3 = white
 Title_5.TextSize = 14.000
 Title_5.TextWrapped = true
 Title_5.TextXAlignment = Enum.TextXAlignment.Left
-
 AntiAFK.Name = "AntiAFK"
 AntiAFK.Parent = MainFrame_2
 AntiAFK.BackgroundColor3 = lightGray
@@ -460,7 +428,6 @@ AntiAFK.BorderSizePixel = 0
 AntiAFK.ClipsDescendants = true
 AntiAFK.Position = UDim2.new(0.0199999996, 0, 0.331, 0)
 AntiAFK.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_6.Name = "Activation"
 Activation_6.Parent = AntiAFK
 Activation_6.BackgroundColor3 = mediumGray
@@ -470,7 +437,6 @@ Activation_6.Font = Enum.Font.Gotham
 Activation_6.Text = ""
 Activation_6.TextColor3 = green
 Activation_6.TextSize = 18.000
-
 Title_6.Name = "Title"
 Title_6.Parent = AntiAFK
 Title_6.BackgroundColor3 = lightGray
@@ -485,7 +451,6 @@ Title_6.TextColor3 = white
 Title_6.TextSize = 14.000
 Title_6.TextWrapped = true
 Title_6.TextXAlignment = Enum.TextXAlignment.Left
-
 KillMurderer.Name = "KillMurderer"
 KillMurderer.Parent = MainFrame_2
 KillMurderer.BackgroundColor3 = lightGray
@@ -494,7 +459,6 @@ KillMurderer.BorderSizePixel = 0
 KillMurderer.ClipsDescendants = true
 KillMurderer.Position = UDim2.new(0.0199999996, 0, 0.542999983, 0)
 KillMurderer.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_7.Name = "Activation"
 Activation_7.Parent = KillMurderer
 Activation_7.BackgroundColor3 = mediumGray
@@ -504,7 +468,6 @@ Activation_7.Font = Enum.Font.Gotham
 Activation_7.Text = ""
 Activation_7.TextColor3 = green
 Activation_7.TextSize = 18.000
-
 Title_7.Name = "Title"
 Title_7.Parent = KillMurderer
 Title_7.BackgroundColor3 = lightGray
@@ -519,7 +482,6 @@ Title_7.TextColor3 = white
 Title_7.TextSize = 14.000
 Title_7.TextWrapped = true
 Title_7.TextXAlignment = Enum.TextXAlignment.Left
-
 GunGrabber.Name = "GunGrabber"
 GunGrabber.Parent = MainFrame_2
 GunGrabber.BackgroundColor3 = lightGray
@@ -528,7 +490,6 @@ GunGrabber.BorderSizePixel = 0
 GunGrabber.ClipsDescendants = true
 GunGrabber.Position = UDim2.new(0.0199999996, 0, 0.648999989, 0)
 GunGrabber.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_8.Name = "Activation"
 Activation_8.Parent = GunGrabber
 Activation_8.BackgroundColor3 = mediumGray
@@ -538,7 +499,6 @@ Activation_8.Font = Enum.Font.Gotham
 Activation_8.Text = ""
 Activation_8.TextColor3 = green
 Activation_8.TextSize = 18.000
-
 Title_8.Name = "Title"
 Title_8.Parent = GunGrabber
 Title_8.BackgroundColor3 = lightGray
@@ -548,12 +508,11 @@ Title_8.BorderSizePixel = 0
 Title_8.Position = UDim2.new(0.161490679, 0, 0, 0)
 Title_8.Size = UDim2.new(0.838509321, 0, 1, 0)
 Title_8.Font = Enum.Font.Gotham
-Title_8.Text = "Auto GrabGunv2"
+Title_8.Text = "Auto GrabGunv2 -عند كل مرة تاخذ فيها المسدس لازم تشغلة مرة ثانيه"
 Title_8.TextColor3 = white
-Title_8.TextSize = 14.000
+Title_8.TextSize = 9.1000
 Title_8.TextWrapped = true
 Title_8.TextXAlignment = Enum.TextXAlignment.Left
-
 KillAll.Name = "KillAll"
 KillAll.Parent = MainFrame_2
 KillAll.BackgroundColor3 = lightGray
@@ -562,7 +521,6 @@ KillAll.BorderSizePixel = 0
 KillAll.ClipsDescendants = true
 KillAll.Position = UDim2.new(0.0199999996, 0, 0.437000006, 0)
 KillAll.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_9.Name = "Activation"
 Activation_9.Parent = KillAll
 Activation_9.BackgroundColor3 = mediumGray
@@ -572,7 +530,6 @@ Activation_9.Font = Enum.Font.Gotham
 Activation_9.Text = ""
 Activation_9.TextColor3 = green
 Activation_9.TextSize = 18.000
-
 Title_9.Name = "Title"
 Title_9.Parent = KillAll
 Title_9.BackgroundColor3 = lightGray
@@ -587,7 +544,6 @@ Title_9.TextColor3 = white
 Title_9.TextSize = 14.000
 Title_9.TextWrapped = true
 Title_9.TextXAlignment = Enum.TextXAlignment.Left
-
 AntiLag.Name = "AntiLag"
 AntiLag.Parent = MainFrame_2
 AntiLag.BackgroundColor3 = lightGray
@@ -596,7 +552,6 @@ AntiLag.BorderSizePixel = 0
 AntiLag.ClipsDescendants = true
 AntiLag.Position = UDim2.new(0.0199999996, 0, 0.226999998, 0)
 AntiLag.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_10.Name = "Activation"
 Activation_10.Parent = AntiLag
 Activation_10.BackgroundColor3 = mediumGray
@@ -606,7 +561,6 @@ Activation_10.Font = Enum.Font.Gotham
 Activation_10.Text = ""
 Activation_10.TextColor3 = green
 Activation_10.TextSize = 18.000
-
 Title_10.Name = "Title"
 Title_10.Parent = AntiLag
 Title_10.BackgroundColor3 = lightGray
@@ -621,7 +575,6 @@ Title_10.TextColor3 = white
 Title_10.TextSize = 14.000
 Title_10.TextWrapped = true
 Title_10.TextXAlignment = Enum.TextXAlignment.Left
-
 AimPlayer.Name = "AimPlayer"
 AimPlayer.Parent = MainFrame_2
 AimPlayer.BackgroundColor3 = lightGray
@@ -630,7 +583,6 @@ AimPlayer.BorderSizePixel = 0
 AimPlayer.ClipsDescendants = true
 AimPlayer.Position = UDim2.new(0.0170000009, 0, 0.763999999, 0)
 AimPlayer.Size = UDim2.new(0, 161, 0, 42)
-
 AimActivation.Name = "AimActivation"
 AimActivation.Parent = AimPlayer
 AimActivation.BackgroundColor3 = darkGray
@@ -641,7 +593,6 @@ AimActivation.Font = Enum.Font.Gotham
 AimActivation.Text = "Aim User"
 AimActivation.TextColor3 = white
 AimActivation.TextSize = 14.000
-
 AimTB.Name = "AimTB"
 AimTB.Parent = AimPlayer
 AimTB.BackgroundColor3 = darkGray
@@ -653,7 +604,6 @@ AimTB.Font = Enum.Font.Gotham
 AimTB.Text = "Player name"
 AimTB.TextColor3 = white
 AimTB.TextSize = 14.000
-
 DeAimActivation.Name = "DeAimActivation"
 DeAimActivation.Parent = AimPlayer
 DeAimActivation.BackgroundColor3 = darkGray
@@ -664,7 +614,6 @@ DeAimActivation.Font = Enum.Font.Gotham
 DeAimActivation.Text = "Off"
 DeAimActivation.TextColor3 = white
 DeAimActivation.TextSize = 14.000
-
 VisualFrame.Name = "VisualFrame"
 VisualFrame.Parent = BottomFrame
 VisualFrame.Active = true
@@ -676,7 +625,6 @@ VisualFrame.Size = UDim2.new(0, 367, 0, 158)
 VisualFrame.Visible = false
 VisualFrame.CanvasSize = UDim2.new(0, 0, 0.5, 0)
 VisualFrame.ScrollBarThickness = 3
-
 AllESP.Name = "AllESP"
 AllESP.Parent = VisualFrame
 AllESP.BackgroundColor3 = lightGray
@@ -686,7 +634,6 @@ AllESP.BorderSizePixel = 0
 AllESP.ClipsDescendants = true
 AllESP.Position = UDim2.new(0.0199999996, 0, 0.0399999991, 0)
 AllESP.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_11.Name = "Activation"
 Activation_11.Parent = AllESP
 Activation_11.BackgroundColor3 = mediumGray
@@ -696,7 +643,6 @@ Activation_11.Font = Enum.Font.Gotham
 Activation_11.Text = ""
 Activation_11.TextColor3 = green
 Activation_11.TextSize = 18.000
-
 Title_11.Name = "Title"
 Title_11.Parent = AllESP
 Title_11.BackgroundColor3 = lightGray
@@ -711,7 +657,6 @@ Title_11.TextColor3 = white
 Title_11.TextSize = 14.000
 Title_11.TextWrapped = true
 Title_11.TextXAlignment = Enum.TextXAlignment.Left
-
 TeleportFrame.Name = "TeleportFrame"
 TeleportFrame.Parent = BottomFrame
 TeleportFrame.Active = true
@@ -723,7 +668,6 @@ TeleportFrame.Size = UDim2.new(0, 367, 0, 158)
 TeleportFrame.Visible = false
 TeleportFrame.CanvasSize = UDim2.new(0, 0, 1, 0)
 TeleportFrame.ScrollBarThickness = 3
-
 TP1.Name = "TP1"
 TP1.Parent = TeleportFrame
 TP1.BackgroundColor3 = lightGray
@@ -733,7 +677,6 @@ TP1.BorderSizePixel = 0
 TP1.ClipsDescendants = true
 TP1.Position = UDim2.new(0.0199999996, 0, 0.0199999996, 0)
 TP1.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_13.Name = "Activation"
 Activation_13.Parent = TP1
 Activation_13.BackgroundColor3 = mediumGray
@@ -743,7 +686,6 @@ Activation_13.Font = Enum.Font.Gotham
 Activation_13.Text = ""
 Activation_13.TextColor3 = green
 Activation_13.TextSize = 18.000
-
 Title_13.Name = "Title"
 Title_13.Parent = TP1
 Title_13.BackgroundColor3 = lightGray
@@ -758,7 +700,6 @@ Title_13.TextColor3 = white
 Title_13.TextSize = 14.000
 Title_13.TextWrapped = true
 Title_13.TextXAlignment = Enum.TextXAlignment.Left
-
 TP2.Name = "TP2"
 TP2.Parent = TeleportFrame
 TP2.BackgroundColor3 = lightGray
@@ -767,7 +708,6 @@ TP2.BorderSizePixel = 0
 TP2.ClipsDescendants = true
 TP2.Position = UDim2.new(0.0199999996, 0, 0.126000002, 0)
 TP2.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_14.Name = "Activation"
 Activation_14.Parent = TP2
 Activation_14.BackgroundColor3 = mediumGray
@@ -777,7 +717,6 @@ Activation_14.Font = Enum.Font.Gotham
 Activation_14.Text = ""
 Activation_14.TextColor3 = green
 Activation_14.TextSize = 18.000
-
 Title_14.Name = "Title"
 Title_14.Parent = TP2
 Title_14.BackgroundColor3 = lightGray
@@ -787,12 +726,11 @@ Title_14.BorderSizePixel = 0
 Title_14.Position = UDim2.new(0.161490679, 0, 0, 0)
 Title_14.Size = UDim2.new(0.838509321, 0, 1, 0)
 Title_14.Font = Enum.Font.Gotham
-Title_14.Text = "لا تشغلة"
+Title_14.Text = "TP TO MAP-لازم العملات تترسبن الاول"
 Title_14.TextColor3 = white
-Title_14.TextSize = 14.000
+Title_14.TextSize = 9.1000
 Title_14.TextWrapped = true
 Title_14.TextXAlignment = Enum.TextXAlignment.Left
-
 TeleportName.Name = "TeleportName"
 TeleportName.Parent = TeleportFrame
 TeleportName.BackgroundColor3 = lightGray
@@ -801,7 +739,6 @@ TeleportName.BorderSizePixel = 0
 TeleportName.ClipsDescendants = true
 TeleportName.Position = UDim2.new(0.0199999996, 0, 0.455000013, 0)
 TeleportName.Size = UDim2.new(0, 161, 0, 42)
-
 TeleportTB.Name = "TeleportTB"
 TeleportTB.Parent = TeleportName
 TeleportTB.BackgroundColor3 = darkGray
@@ -813,7 +750,6 @@ TeleportTB.Font = Enum.Font.Gotham
 TeleportTB.Text = "Insert Name"
 TeleportTB.TextColor3 = white
 TeleportTB.TextSize = 14.000
-
 TeleportButton.Name = "TeleportButton"
 TeleportButton.Parent = TeleportName
 TeleportButton.BackgroundColor3 = darkGray
@@ -824,7 +760,6 @@ TeleportButton.Font = Enum.Font.Gotham
 TeleportButton.Text = "Teleport"
 TeleportButton.TextColor3 = white
 TeleportButton.TextSize = 14.000
-
 TP3.Name = "TP3"
 TP3.Parent = TeleportFrame
 TP3.BackgroundColor3 = lightGray
@@ -833,7 +768,6 @@ TP3.BorderSizePixel = 0
 TP3.ClipsDescendants = true
 TP3.Position = UDim2.new(0.0199999996, 0, 0.232999995, 0)
 TP3.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_15.Name = "Activation"
 Activation_15.Parent = TP3
 Activation_15.BackgroundColor3 = mediumGray
@@ -843,7 +777,6 @@ Activation_15.Font = Enum.Font.Gotham
 Activation_15.Text = ""
 Activation_15.TextColor3 = green
 Activation_15.TextSize = 18.000
-
 Title_15.Name = "Title"
 Title_15.Parent = TP3
 Title_15.BackgroundColor3 = lightGray
@@ -858,7 +791,6 @@ Title_15.TextColor3 = white
 Title_15.TextSize = 14.000
 Title_15.TextWrapped = true
 Title_15.TextXAlignment = Enum.TextXAlignment.Left
-
 TP4.Name = "TP4"
 TP4.Parent = TeleportFrame
 TP4.BackgroundColor3 = lightGray
@@ -867,7 +799,6 @@ TP4.BorderSizePixel = 0
 TP4.ClipsDescendants = true
 TP4.Position = UDim2.new(0.0199999996, 0, 0.338999987, 0)
 TP4.Size = UDim2.new(0, 161, 0, 20)
-
 Activation_16.Name = "Activation"
 Activation_16.Parent = TP4
 Activation_16.BackgroundColor3 = mediumGray
@@ -877,7 +808,6 @@ Activation_16.Font = Enum.Font.Gotham
 Activation_16.Text = ""
 Activation_16.TextColor3 = green
 Activation_16.TextSize = 18.000
-
 Title_16.Name = "Title"
 Title_16.Parent = TP4
 Title_16.BackgroundColor3 = lightGray
@@ -892,7 +822,6 @@ Title_16.TextColor3 = white
 Title_16.TextSize = 14.000
 Title_16.TextWrapped = true
 Title_16.TextXAlignment = Enum.TextXAlignment.Left
-
 TopFrame.Name = "TopFrame"
 TopFrame.Parent = MainFrame
 TopFrame.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -902,7 +831,6 @@ TopFrame.BorderSizePixel = 0
 TopFrame.ClipsDescendants = true
 TopFrame.Position = UDim2.new(0.5, 0, -0.057, 0)
 TopFrame.Size = UDim2.new(0, 387, 0, 26)
-
 Title_17.Name = "Title"
 Title_17.Parent = TopFrame
 Title_17.BackgroundColor3 = white
@@ -911,11 +839,10 @@ Title_17.BorderSizePixel = 0
 Title_17.Position = UDim2.new(0.0199999996, 0, 0, 0)
 Title_17.Size = UDim2.new(0.405684769, 0, 1, 0)
 Title_17.Font = Enum.Font.Gotham
-Title_17.Text = "MM2 SCRIPT - By FaresV2"
+Title_17.Text = "MM2 SCRIPT - By FaresV3"
 Title_17.TextColor3 = white
 Title_17.TextSize = 14.000
 Title_17.TextXAlignment = Enum.TextXAlignment.Left
-
 MinimizeButton.Name = "MinimizeButton"
 MinimizeButton.Parent = TopFrame
 MinimizeButton.BackgroundColor3 = darkPurple
@@ -931,6 +858,211 @@ MinimizeButton.TextSize = 25.000
 
 
 
+local AimbotMurder = Instance.new("Frame")
+AimbotMurder.Name = "AimbotMurder"
+AimbotMurder.Parent = MainFrame_2
+AimbotMurder.BackgroundColor3 = lightGray
+AimbotMurder.BorderColor3 = lightGray
+AimbotMurder.BorderSizePixel = 0
+AimbotMurder.ClipsDescendants = true
+AimbotMurder.Position = UDim2.new(0.5, 0, 0.0199999996, 0)
+AimbotMurder.Size = UDim2.new(0, 161, 0, 60)
+
+local Activation_AimbotMurder = Instance.new("TextButton")
+Activation_AimbotMurder.Name = "Activation"
+Activation_AimbotMurder.Parent = AimbotMurder
+Activation_AimbotMurder.BackgroundColor3 = mediumGray
+Activation_AimbotMurder.BorderSizePixel = 0
+Activation_AimbotMurder.Size = UDim2.new(0, 20, 0, 20)
+Activation_AimbotMurder.Font = Enum.Font.Gotham
+Activation_AimbotMurder.Text = ""
+Activation_AimbotMurder.TextColor3 = green
+Activation_AimbotMurder.TextSize = 18.000
+
+local Title_AimbotMurder = Instance.new("TextLabel")
+Title_AimbotMurder.Name = "Title"
+Title_AimbotMurder.Parent = AimbotMurder
+Title_AimbotMurder.BackgroundColor3 = lightGray
+Title_AimbotMurder.BackgroundTransparency = 1.000
+Title_AimbotMurder.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title_AimbotMurder.Size = UDim2.new(0.838509321, 0, 0.33, 0)
+Title_AimbotMurder.Font = Enum.Font.Gotham
+Title_AimbotMurder.Text = "Aimbot Murder"
+Title_AimbotMurder.TextColor3 = white
+Title_AimbotMurder.TextSize = 14.000
+Title_AimbotMurder.TextXAlignment = Enum.TextXAlignment.Left
+
+local Slider_AimbotMurder = Instance.new("Frame")
+Slider_AimbotMurder.Name = "Slider"
+Slider_AimbotMurder.Parent = AimbotMurder
+Slider_AimbotMurder.BackgroundColor3 = darkGray
+Slider_AimbotMurder.Position = UDim2.new(0, 0, 0.4, 0)
+Slider_AimbotMurder.Size = UDim2.new(1, 0, 0, 10)
+Instance.new("UICorner", Slider_AimbotMurder).CornerRadius = UDim.new(0, 5)
+
+local Fill_AimbotMurder = Instance.new("Frame")
+Fill_AimbotMurder.Name = "Fill"
+Fill_AimbotMurder.Parent = Slider_AimbotMurder
+Fill_AimbotMurder.BackgroundColor3 = darkPurple
+Fill_AimbotMurder.Size = UDim2.new(0.1, 0, 1, 0)
+Instance.new("UICorner", Fill_AimbotMurder).CornerRadius = UDim.new(0, 5)
+
+local Handle_AimbotMurder = Instance.new("TextButton")
+Handle_AimbotMurder.Name = "Handle"
+Handle_AimbotMurder.Parent = Slider_AimbotMurder
+Handle_AimbotMurder.BackgroundColor3 = white
+Handle_AimbotMurder.Size = UDim2.new(0, 12, 0, 12)
+Handle_AimbotMurder.Position = UDim2.new(0.1, -6, 0.5, -6)
+Handle_AimbotMurder.Text = ""
+Instance.new("UICorner", Handle_AimbotMurder).CornerRadius = UDim.new(1, 0)
+
+local ValueLabel_AimbotMurder = Instance.new("TextLabel")
+ValueLabel_AimbotMurder.Name = "ValueLabel"
+ValueLabel_AimbotMurder.Parent = AimbotMurder
+ValueLabel_AimbotMurder.BackgroundTransparency = 1
+ValueLabel_AimbotMurder.Position = UDim2.new(0, 0, 0.7, 0)
+ValueLabel_AimbotMurder.Size = UDim2.new(1, 0, 0.3, 0)
+ValueLabel_AimbotMurder.Font = Enum.Font.GothamBold
+ValueLabel_AimbotMurder.Text = "FOV: 265"
+ValueLabel_AimbotMurder.TextColor3 = white
+ValueLabel_AimbotMurder.TextSize = 12.000
+ValueLabel_AimbotMurder.TextXAlignment = Enum.TextXAlignment.Center
+
+
+local AimbotSheriff = Instance.new("Frame")
+AimbotSheriff.Name = "AimbotSheriff"
+AimbotSheriff.Parent = MainFrame_2
+AimbotSheriff.BackgroundColor3 = lightGray
+AimbotSheriff.BorderColor3 = lightGray
+AimbotSheriff.BorderSizePixel = 0
+AimbotSheriff.ClipsDescendants = true
+AimbotSheriff.Position = UDim2.new(0.5, 0, 0.3, 0)
+AimbotSheriff.Size = UDim2.new(0, 161, 0, 60)
+
+local Activation_AimbotSheriff = Instance.new("TextButton")
+Activation_AimbotSheriff.Name = "Activation"
+Activation_AimbotSheriff.Parent = AimbotSheriff
+Activation_AimbotSheriff.BackgroundColor3 = mediumGray
+Activation_AimbotSheriff.BorderSizePixel = 0
+Activation_AimbotSheriff.Size = UDim2.new(0, 20, 0, 20)
+Activation_AimbotSheriff.Font = Enum.Font.Gotham
+Activation_AimbotSheriff.Text = ""
+Activation_AimbotSheriff.TextColor3 = green
+Activation_AimbotSheriff.TextSize = 18.000
+
+local Title_AimbotSheriff = Instance.new("TextLabel")
+Title_AimbotSheriff.Name = "Title"
+Title_AimbotSheriff.Parent = AimbotSheriff
+Title_AimbotSheriff.BackgroundColor3 = lightGray
+Title_AimbotSheriff.BackgroundTransparency = 1.000
+Title_AimbotSheriff.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title_AimbotSheriff.Size = UDim2.new(0.838509321, 0, 0.33, 0)
+Title_AimbotSheriff.Font = Enum.Font.Gotham
+Title_AimbotSheriff.Text = "Aimbot Sheriff"
+Title_AimbotSheriff.TextColor3 = white
+Title_AimbotSheriff.TextSize = 14.000
+Title_AimbotSheriff.TextXAlignment = Enum.TextXAlignment.Left
+
+local Slider_AimbotSheriff = Instance.new("Frame")
+Slider_AimbotSheriff.Name = "Slider"
+Slider_AimbotSheriff.Parent = AimbotSheriff
+Slider_AimbotSheriff.BackgroundColor3 = darkGray
+Slider_AimbotSheriff.Position = UDim2.new(0, 0, 0.4, 0)
+Slider_AimbotSheriff.Size = UDim2.new(1, 0, 0, 10)
+Instance.new("UICorner", Slider_AimbotSheriff).CornerRadius = UDim.new(0, 5)
+
+local Fill_AimbotSheriff = Instance.new("Frame")
+Fill_AimbotSheriff.Name = "Fill"
+Fill_AimbotSheriff.Parent = Slider_AimbotSheriff
+Fill_AimbotSheriff.BackgroundColor3 = darkPurple
+Fill_AimbotSheriff.Size = UDim2.new(0.1, 0, 1, 0)
+Instance.new("UICorner", Fill_AimbotSheriff).CornerRadius = UDim.new(0, 5)
+
+local Handle_AimbotSheriff = Instance.new("TextButton")
+Handle_AimbotSheriff.Name = "Handle"
+Handle_AimbotSheriff.Parent = Slider_AimbotSheriff
+Handle_AimbotSheriff.BackgroundColor3 = white
+Handle_AimbotSheriff.Size = UDim2.new(0, 12, 0, 12)
+Handle_AimbotSheriff.Position = UDim2.new(0.1, -6, 0.5, -6)
+Handle_AimbotSheriff.Text = ""
+Instance.new("UICorner", Handle_AimbotSheriff).CornerRadius = UDim.new(1, 0)
+
+local ValueLabel_AimbotSheriff = Instance.new("TextLabel")
+ValueLabel_AimbotSheriff.Name = "ValueLabel"
+ValueLabel_AimbotSheriff.Parent = AimbotSheriff
+ValueLabel_AimbotSheriff.BackgroundTransparency = 1
+ValueLabel_AimbotSheriff.Position = UDim2.new(0, 0, 0.7, 0)
+ValueLabel_AimbotSheriff.Size = UDim2.new(1, 0, 0.3, 0)
+ValueLabel_AimbotSheriff.Font = Enum.Font.GothamBold
+ValueLabel_AimbotSheriff.Text = "FOV: 265"
+ValueLabel_AimbotSheriff.TextColor3 = white
+ValueLabel_AimbotSheriff.TextSize = 12.000
+ValueLabel_AimbotSheriff.TextXAlignment = Enum.TextXAlignment.Center
+
+
+local EspMurderOnly = Instance.new("Frame")
+EspMurderOnly.Name = "EspMurderOnly"
+EspMurderOnly.Parent = VisualFrame
+EspMurderOnly.BackgroundColor3 = lightGray
+EspMurderOnly.BackgroundTransparency = 1.000
+EspMurderOnly.Position = UDim2.new(0.0199999996, 0, 0.239999995, 0)
+EspMurderOnly.Size = UDim2.new(0, 161, 0, 20)
+
+local Activation_EspMurder = Instance.new("TextButton")
+Activation_EspMurder.Name = "Activation"
+Activation_EspMurder.Parent = EspMurderOnly
+Activation_EspMurder.BackgroundColor3 = mediumGray
+Activation_EspMurder.BorderSizePixel = 0
+Activation_EspMurder.Size = UDim2.new(0, 20, 0, 20)
+Activation_EspMurder.Font = Enum.Font.Gotham
+Activation_EspMurder.Text = ""
+Activation_EspMurder.TextColor3 = green
+Activation_EspMurder.TextSize = 18.000
+
+local Title_EspMurder = Instance.new("TextLabel")
+Title_EspMurder.Name = "Title"
+Title_EspMurder.Parent = EspMurderOnly
+Title_EspMurder.BackgroundTransparency = 1.000
+Title_EspMurder.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title_EspMurder.Size = UDim2.new(0.838509321, 0, 1, 0)
+Title_EspMurder.Font = Enum.Font.Gotham
+Title_EspMurder.Text = "ESP Murder Only"
+Title_EspMurder.TextColor3 = white
+Title_EspMurder.TextSize = 14.000
+Title_EspMurder.TextXAlignment = Enum.TextXAlignment.Left
+
+
+local EspSheriffOnly = Instance.new("Frame")
+EspSheriffOnly.Name = "EspSheriffOnly"
+EspSheriffOnly.Parent = VisualFrame
+EspSheriffOnly.BackgroundColor3 = lightGray
+EspSheriffOnly.BackgroundTransparency = 1.000
+EspSheriffOnly.Position = UDim2.new(0.0199999996, 0, 0.439999998, 0)
+EspSheriffOnly.Size = UDim2.new(0, 161, 0, 20)
+
+local Activation_EspSheriff = Instance.new("TextButton")
+Activation_EspSheriff.Name = "Activation"
+Activation_EspSheriff.Parent = EspSheriffOnly
+Activation_EspSheriff.BackgroundColor3 = mediumGray
+Activation_EspSheriff.BorderSizePixel = 0
+Activation_EspSheriff.Size = UDim2.new(0, 20, 0, 20)
+Activation_EspSheriff.Font = Enum.Font.Gotham
+Activation_EspSheriff.Text = ""
+Activation_EspSheriff.TextColor3 = green
+Activation_EspSheriff.TextSize = 18.000
+
+local Title_EspSheriff = Instance.new("TextLabel")
+Title_EspSheriff.Name = "Title"
+Title_EspSheriff.Parent = EspSheriffOnly
+Title_EspSheriff.BackgroundTransparency = 1.000
+Title_EspSheriff.Position = UDim2.new(0.161490679, 0, 0, 0)
+Title_EspSheriff.Size = UDim2.new(0.838509321, 0, 1, 0)
+Title_EspSheriff.Font = Enum.Font.Gotham
+Title_EspSheriff.Text = "ESP Sheriff Only"
+Title_EspSheriff.TextColor3 = white
+Title_EspSheriff.TextSize = 14.000
+Title_EspSheriff.TextXAlignment = Enum.TextXAlignment.Left
+
 local ToggleButtonFrame = Instance.new("Frame")
 ToggleButtonFrame.Name = "ToggleButtonFrame"
 ToggleButtonFrame.Parent = MM2AdminPanel
@@ -940,7 +1072,6 @@ ToggleButtonFrame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 ToggleButtonFrame.BorderSizePixel = 0
 ToggleButtonFrame.Visible = false 
 Instance.new("UICorner", ToggleButtonFrame).CornerRadius = UDim.new(0, 4)
-
 
 ToggleGuiButton.Name = "ToggleGuiButton"
 ToggleGuiButton.Parent = ToggleButtonFrame 
@@ -953,18 +1084,17 @@ ToggleGuiButton.BackgroundTransparency = 1
 ToggleGuiButton.TextColor3 = white
 ToggleGuiButton.Visible = true 
 
-
-
-
 local function toggleButton(button, state)
-    if state then
-        button.Text = "√"
-    else
-        button.Text = ""
+    if button then
+        if state then
+            button.Text = "√"
+        else
+            button.Text = ""
+        end
     end
 end
 
-local function ZIRG_fake_script() -- MainFrame.DraggingScript 
+local function ZIRG_fake_script() 
 	local script = Instance.new('LocalScript', MainFrame)
 	local UserInputService = game:GetService("UserInputService")
 	local gui = script.Parent
@@ -998,7 +1128,7 @@ local function ZIRG_fake_script() -- MainFrame.DraggingScript
 end
 coroutine.wrap(ZIRG_fake_script)()
 
-local function YMZQ_fake_script() -- MainFrame.TweenIntro 
+local function YMZQ_fake_script() 
 	local script = Instance.new('LocalScript', MainFrame)
 	wait(1)
 	script.Parent.StartFrame:TweenSize(UDim2.new(0,100,0,100), "Out", "Quad", 0.5, true)
@@ -1012,7 +1142,7 @@ local function YMZQ_fake_script() -- MainFrame.TweenIntro
 end
 coroutine.wrap(YMZQ_fake_script)()
 
-local function FLY_SCRIPT() -- Original Fly Script (UNCHANGED)
+local function FLY_SCRIPT() 
     local script = Instance.new('LocalScript', Activation)
     local flyActive = false
     script.Parent.MouseButton1Click:Connect(function()
@@ -1026,7 +1156,6 @@ end
 coroutine.wrap(FLY_SCRIPT)()
 
 local function HREBVA_fake_script()
---local noclip player 
     local script = Instance.new('LocalScript', Activation_2)
     local noclip = false
     local player = game.Players.LocalPlayer
@@ -1066,18 +1195,16 @@ local function HREBVA_fake_script()
 end
 coroutine.wrap(HREBVA_fake_script)()
 
-local function WLZBXL_fake_script() -- SetActivation.Script 
+local function WLZBXL_fake_script() 
 	local script = Instance.new('LocalScript', SetActivation)
 	local Players = game:GetService("Players")
 	local player = Players.LocalPlayer
-
 	local desiredSpeed = 16
 	local running = false
 
 	script.Parent.MouseButton1Down:Connect(function()
 		desiredSpeed = tonumber(script.Parent.Parent.WalkspeedTB.Text) or 16
 		running = true
-
 		task.spawn(function()
 			while running do
 				if player.Character and player.Character:FindFirstChild("Humanoid") then
@@ -1090,8 +1217,7 @@ local function WLZBXL_fake_script() -- SetActivation.Script
 end
 coroutine.wrap(WLZBXL_fake_script)()
 
-
-local function YRYWA_fake_script() -- ResetActivation.Script 
+local function YRYWA_fake_script() 
 	local script = Instance.new('LocalScript', ResetActivation)
 	script.Parent.MouseButton1Down:Connect(function()	
 		local humanoid = game.Players.LocalPlayer.Character.Humanoid
@@ -1101,7 +1227,7 @@ local function YRYWA_fake_script() -- ResetActivation.Script
 end
 coroutine.wrap(YRYWA_fake_script)()
 
-local function CFCRCM_fake_script() -- SetActivation_2.Script 
+local function CFCRCM_fake_script() 
 	local script = Instance.new('LocalScript', SetActivation_2)
 	script.Parent.MouseButton1Down:connect(function()	
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(script.Parent.Parent.JumpPowerTB.Text) or 50
@@ -1109,7 +1235,7 @@ local function CFCRCM_fake_script() -- SetActivation_2.Script
 end
 coroutine.wrap(CFCRCM_fake_script)()
 
-local function PDGD_fake_script() -- ResetActivation_2.Script 
+local function PDGD_fake_script() 
 	local script = Instance.new('LocalScript', ResetActivation_2)
 	script.Parent.MouseButton1Down:connect(function()	
 		game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
@@ -1146,12 +1272,10 @@ local function SPNLPQB_fake_script()
 end
 coroutine.wrap(SPNLPQB_fake_script)()
 
-
 local function COIN_FARM_SCRIPT()
     local script = Instance.new('LocalScript', Activation_4)
     local LocalPlayer = game:GetService("Players").LocalPlayer
     local RunService = game:GetService("RunService")
-
     local isFlying = false
     local flyVelocity = nil
     local flyGyro = nil
@@ -1180,7 +1304,6 @@ local function COIN_FARM_SCRIPT()
         end
         return nil
     end
-
     
     local function startNoclipping()
         if noclipConnection then return end
@@ -1194,7 +1317,6 @@ local function COIN_FARM_SCRIPT()
             end
         end)
     end
-
     
     local function stopNoclipping()
         if noclipConnection then
@@ -1209,14 +1331,11 @@ local function COIN_FARM_SCRIPT()
         local hrp = char:FindFirstChild("HumanoidRootPart")
         local humanoid = char:FindFirstChild("Humanoid")
         if not (hrp and humanoid) then return end
-
         isFlying = true
         humanoid.PlatformStand = true
-
         flyGyro = Instance.new("BodyGyro", hrp)
         flyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
         flyGyro.P = 50000
-
         flyVelocity = Instance.new("BodyVelocity", hrp)
         flyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
         flyVelocity.Velocity = Vector3.zero
@@ -1238,11 +1357,9 @@ local function COIN_FARM_SCRIPT()
         local char = LocalPlayer.Character
         local hrp = char and char:FindFirstChild("HumanoidRootPart")
         if not hrp then stopFlying() return end
-
         if not currentTarget or not currentTarget.Parent then
             currentTarget = getNextCoin()
         end
-
         if currentTarget then
             flyGyro.CFrame = CFrame.new(hrp.Position, currentTarget.Position)
             local dir = (currentTarget.Position - hrp.Position).Unit
@@ -1255,7 +1372,6 @@ local function COIN_FARM_SCRIPT()
     script.Parent.MouseButton1Click:Connect(function()
         isFarming = not isFarming
         toggleButton(script.Parent, isFarming)
-
         if isFarming then
             startFlying()
             startNoclipping() 
@@ -1271,8 +1387,6 @@ local function COIN_FARM_SCRIPT()
     end)
 end
 coroutine.wrap(COIN_FARM_SCRIPT)()
-
-
 
 local function CKAW_fake_script() 
     local script = Instance.new('LocalScript', Activation_5)
@@ -1291,7 +1405,7 @@ local function CKAW_fake_script()
     function XrayOff(obj)
         for _, v in pairs(obj:GetChildren()) do
             if (v:IsA("BasePart")) and not v.Parent:FindFirstChild("Humanoid") then
-                                v.LocalTransparencyModifier = 0
+                v.LocalTransparencyModifier = 0
             end
             XrayOff(v)
         end
@@ -1320,11 +1434,11 @@ local function ANTI_AFK_SCRIPT()
 end
 coroutine.wrap(ANTI_AFK_SCRIPT)()
 
-local function QHWFTYB_fake_script() -- Kill Murderer Script
+local function QHWFTYB_fake_script() 
 	local script = Instance.new('LocalScript', Activation_7)
 	local function GetMurderer()
 	    for _, v in pairs(game:GetService("Players"):GetPlayers()) do
-	        if v.Character and (v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife")) then
+	        if v and v.Character and (v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife")) then
 	            return v
 	        end
 	    end
@@ -1353,7 +1467,6 @@ local function AUTO_GRAB_GUN_SCRIPT()
     local Players = game:GetService("Players")
     local RunService = game:GetService("RunService")
     local player = Players.LocalPlayer
-
     local running = false
 
     local function findGun()
@@ -1362,16 +1475,13 @@ local function AUTO_GRAB_GUN_SCRIPT()
 
     script.Parent.MouseButton1Click:Connect(function()
         running = not running
-
         toggleButton(script.Parent, running)
-
         task.spawn(function()
             while running do
                 local char = player.Character
                 if char and char:FindFirstChild("HumanoidRootPart") then
                     local hrp = char.HumanoidRootPart
                     local oldPos = hrp.CFrame
-
                     local gun = findGun()
                     if gun and gun:IsA("BasePart") then
                         hrp.CFrame = gun.CFrame + Vector3.new(0, 2, 0)
@@ -1395,7 +1505,7 @@ local function GTOJAZG_fake_script()
         toggleButton(script.Parent, true)
 		local Players = game:GetService("Players")	
 		for i, Victim in pairs(Players:GetPlayers()) do
-			if Victim.Name ~= game.Players.LocalPlayer.Name and Victim.Character and Victim.Character:FindFirstChild("HumanoidRootPart") then
+			if Victim and Victim.Name ~= game.Players.LocalPlayer.Name and Victim.Character and Victim.Character:FindFirstChild("HumanoidRootPart") then
 				repeat wait()
 					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Victim.Character.HumanoidRootPart.CFrame * CFrame.new(0, 0, 1)
 				until not Victim or not Victim.Parent or not Victim.Character or Victim.Character.Humanoid.Health == 0
@@ -1405,6 +1515,7 @@ local function GTOJAZG_fake_script()
 	end)
 end
 coroutine.wrap(GTOJAZG_fake_script)()
+
 
 local function TJPSA_fake_script() 
 	local script = Instance.new('LocalScript', Activation_10)
@@ -1645,7 +1756,7 @@ local function FGLRVKA_fake_script()
 	local script = Instance.new('LocalScript', AimTB)
 	script.Parent.FocusLost:connect(function()
 		for i,v in pairs(game.Players:GetChildren()) do
-			if (string.sub(string.lower(v.Name),1,string.len(script.Parent.Text))) == string.lower(script.Parent.Text) then
+			if v and (string.sub(string.lower(v.Name),1,string.len(script.Parent.Text))) == string.lower(script.Parent.Text) then
 				script.Parent.Text = v.Name
 			end
 		end
@@ -1653,7 +1764,7 @@ local function FGLRVKA_fake_script()
 end
 coroutine.wrap(FGLRVKA_fake_script)()
 
-local function LZHKGTA_fake_script() -- AimPlayer.Script 
+local function LZHKGTA_fake_script() 
 	local script = Instance.new('LocalScript', AimPlayer)
 	_G.aimingOn = false
 	script.Parent.AimActivation.MouseButton1Click:Connect(function()
@@ -1664,7 +1775,7 @@ local function LZHKGTA_fake_script() -- AimPlayer.Script
 			if targetPlayer and targetPlayer.Character and targetPlayer.Character:FindFirstChild("HumanoidRootPart") and targetPlayer.Character.Humanoid.Health > 0 then
 				workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, targetPlayer.Character.HumanoidRootPart.Position)
 			else
-				_G.aimingOn = false -- Stop if target is gone
+				_G.aimingOn = false 
 			end
             wait()
 		end
@@ -1675,6 +1786,9 @@ local function LZHKGTA_fake_script() -- AimPlayer.Script
 	end)
 end
 coroutine.wrap(LZHKGTA_fake_script)()
+
+
+
 
 local function MVWHPW_fake_script() 
     local script = Instance.new('LocalScript', VisualFrame)
@@ -1690,34 +1804,36 @@ local function MVWHPW_fake_script()
     end
 
     local function MakeESP()
-        pcall(ClearESP)
-        local plrs = game:GetService("Players")
-        local localPlayer = plrs.LocalPlayer
+        pcall(function() 
+            ClearESP()
+            local plrs = game:GetService("Players")
+            local localPlayer = plrs.LocalPlayer
 
-        for _, v in pairs(plrs:GetPlayers()) do
-            if v ~= localPlayer and v.Character and v.Character:FindFirstChild("Head") then
-                local roleColor = Color3.new(1, 1, 1) 
-                if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
-                    roleColor = Color3.new(1, 0, 0) 
-                elseif v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
-                    roleColor = Color3.new(0, 0, 1) 
+            for _, v in pairs(plrs:GetPlayers()) do
+                if v and v.Character and v.Character:FindFirstChild("Head") and v ~= localPlayer then
+                    local roleColor = Color3.new(1, 1, 1) 
+                    if v.Character:FindFirstChild("Knife") or v.Backpack:FindFirstChild("Knife") then
+                        roleColor = Color3.new(1, 0, 0) 
+                    elseif v.Character:FindFirstChild("Gun") or v.Backpack:FindFirstChild("Gun") then
+                        roleColor = Color3.new(0, 0, 1) 
+                    end
+
+                    local bgui = Instance.new("BillboardGui", v.Character.Head)
+                    bgui.Name = "EGUI"
+                    bgui.AlwaysOnTop = true
+                    bgui.ExtentsOffset = Vector3.new(0, 2, 0)
+                    bgui.Size = UDim2.new(0, 200, 0, 50)
+                    
+                    local nam = Instance.new("TextLabel", bgui)
+                    nam.Text = v.Name 
+                    nam.BackgroundTransparency = 1
+                    nam.TextSize = 15
+                    nam.Font = Enum.Font.GothamBold
+                    nam.TextColor3 = roleColor
+                    nam.Size = UDim2.new(1, 0, 1, 0)
                 end
-
-                local bgui = Instance.new("BillboardGui", v.Character.Head)
-                bgui.Name = "EGUI"
-                bgui.AlwaysOnTop = true
-                bgui.ExtentsOffset = Vector3.new(0, 2, 0)
-                bgui.Size = UDim2.new(0, 200, 0, 50)
-                
-                local nam = Instance.new("TextLabel", bgui)
-                nam.Text = v.Name
-                nam.BackgroundTransparency = 1
-                nam.TextSize = 15
-                nam.Font = Enum.Font.GothamBold
-                nam.TextColor3 = roleColor
-                nam.Size = UDim2.new(1, 0, 1, 0)
             end
-        end
+        end)
     end
 
     script.Parent.AllESP.Activation.MouseButton1Click:Connect(function()
@@ -1740,46 +1856,70 @@ local function OVVPNM_fake_script()
     local script = Instance.new('LocalScript', Activation_13)
     script.Parent.MouseButton1Click:Connect(function()
         toggleButton(script.Parent, true)
-        
-        
         local targetPosition = Vector3.new(373.97, 521.77, -1.92)
-        
         local player = game.Players.LocalPlayer
         if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
-           
             player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition)
         else
              game.StarterGui:SetCore("SendNotification", {Title = "MESSAGE! ", Text = "نتك كحيان"})
         end
-        
-        
         wait(0.5)
         toggleButton(script.Parent, false)
     end)
 end
 coroutine.wrap(OVVPNM_fake_script)()
 
+
 local function ODJNX_fake_script() 
     local script = Instance.new('LocalScript', Activation_14)
+
     script.Parent.MouseButton1Click:Connect(function()
+ 
+       
         toggleButton(script.Parent, true)
-        local basePart = workspace:FindFirstChild("Base", true)
-        if basePart and basePart:IsA("BasePart") and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = basePart.CFrame * CFrame.new(0, 3, 0)
-        else
-            game.StarterGui:SetCore("SendNotification", {Title = "MESSAGE! ", Text = "ترا اسمك صار سارة لانك شغلتة."})
+
+local player = game.Players.LocalPlayer
+if not player then
+    repeat wait() player = game.Players.LocalPlayer until player
+end
+
+local character = player.Character or player.CharacterAdded:Wait()
+
+local function findParentWithCoin(parent)
+    for _, child in pairs(parent:GetChildren()) do
+        if child.Name == "CoinContainer" then
+            return child.Parent
         end
-        wait(0.5)
+        local found = findParentWithCoin(child)
+        if found then
+            return found
+        end
+    end
+    return nil
+end
+
+local parentWithCoin = findParentWithCoin(workspace)
+
+if parentWithCoin then
+    local base = parentWithCoin:FindFirstChild("Base")
+    if base then
+        local hrp = character:WaitForChild("HumanoidRootPart")
+        hrp.CFrame = base:GetModelCFrame()
+    end
+end
+wait(0.5)
+        
         toggleButton(script.Parent, false)
     end)
 end
 coroutine.wrap(ODJNX_fake_script)()
 
-local function CQNKW_fake_script() -- TeleportTB.LocalScript 
+
+local function CQNKW_fake_script() 
 	local script = Instance.new('LocalScript', TeleportTB)
 	script.Parent.FocusLost:connect(function()
 		for i,v in pairs(game.Players:GetChildren()) do
-			if (string.sub(string.lower(v.Name),1,string.len(script.Parent.Text))) == string.lower(script.Parent.Text) then
+			if v and (string.sub(string.lower(v.Name),1,string.len(script.Parent.Text))) == string.lower(script.Parent.Text) then
 				script.Parent.Text = v.Name
 			end
 		end
@@ -1787,7 +1927,7 @@ local function CQNKW_fake_script() -- TeleportTB.LocalScript
 end
 coroutine.wrap(CQNKW_fake_script)()
 
-local function XYYM_fake_script() -- TeleportButton.LocalScript 
+local function XYYM_fake_script() 
 	local script = Instance.new('LocalScript', TeleportButton)
 	script.Parent.MouseButton1Click:Connect(function()	
 		local VictimName = script.Parent.Parent.TeleportTB.Text
@@ -1804,7 +1944,7 @@ local function JZRZ_fake_script()
 	script.Parent.MouseButton1Click:Connect(function()	
         toggleButton(script.Parent, true)
 		for _, player in pairs(game:GetService("Players"):GetPlayers()) do
-			if player.Character and (player.Backpack:FindFirstChild("Knife") or player.Character:FindFirstChild("Knife")) then
+			if player and player.Character and (player.Backpack:FindFirstChild("Knife") or player.Character:FindFirstChild("Knife")) then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
                 break
 			end
@@ -1820,7 +1960,7 @@ local function KFEOGB_fake_script()
 	script.Parent.MouseButton1Click:Connect(function()	
         toggleButton(script.Parent, true)
 		for _, player in pairs(game:GetService("Players"):GetPlayers()) do
-			if player.Character and (player.Backpack:FindFirstChild("Gun") or player.Character:FindFirstChild("Gun")) then
+			if player and player.Character and (player.Backpack:FindFirstChild("Gun") or player.Character:FindFirstChild("Gun")) then
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = player.Character.HumanoidRootPart.CFrame
                 break
 			end
@@ -1831,17 +1971,21 @@ local function KFEOGB_fake_script()
 end
 coroutine.wrap(KFEOGB_fake_script)()
 
-local function JIPBTDH_fake_script() -- BottomFrame.LocalScript 
+local function JIPBTDH_fake_script() 
 	local script = Instance.new('LocalScript', BottomFrame)
     local tabs = {Tab1, Tab2, Tab3, Tab4}
     local frames = {MainFrame_2, PlayerFrame, VisualFrame, TeleportFrame}
 
     local function switchTab(selectedTab, selectedFrame)
         for i, tab in ipairs(tabs) do
-            tab.BackgroundColor3 = (tab == selectedTab) and lightGray or darkPurple
+            if tab and selectedTab then
+                tab.BackgroundColor3 = (tab == selectedTab) and lightGray or darkPurple
+            end
         end
         for i, frame in ipairs(frames) do
-            frame.Visible = (frame == selectedFrame)
+            if frame and selectedFrame then
+                frame.Visible = (frame == selectedFrame)
+            end
         end
     end
 
@@ -1852,17 +1996,12 @@ local function JIPBTDH_fake_script() -- BottomFrame.LocalScript
 end
 coroutine.wrap(JIPBTDH_fake_script)()
 
-
 local function AVLOK_fake_script() 
 	local script = Instance.new('LocalScript', MinimizeButton)
-	
-	
 	script.Parent.MouseButton1Click:connect(function()
 		MainFrame.Visible = false
 		ToggleButtonFrame.Visible = true 
 	end)
-
-	
 	ToggleGuiButton.MouseButton1Click:connect(function()
 		MainFrame.Visible = true
 		ToggleButtonFrame.Visible = false 
@@ -1870,3 +2009,209 @@ local function AVLOK_fake_script()
 end
 coroutine.wrap(AVLOK_fake_script)()
 
+
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+
+local aimbotSettings = {
+    murder = { enabled = false, fov = 265 },
+    sheriff = { enabled = false, fov = 265 }
+}
+
+local customEspSettings = {
+    murder = { enabled = false, guis = {} },
+    sheriff = { enabled = false, guis = {} }
+}
+
+local fovCircle = Drawing.new("Circle")
+fovCircle.Visible = false
+fovCircle.Thickness = 2
+fovCircle.Filled = false
+fovCircle.NumSides = 64
+fovCircle.Color = Color3.fromRGB(255, 255, 0)
+
+local function getPlayerRole(player)
+    if not player or not player.Character then return "Innocent" end
+    if player.Character:FindFirstChild("Knife") or player.Backpack:FindFirstChild("Knife") then
+        return "Murderer"
+    end
+    if player.Character:FindFirstChild("Gun") or player.Backpack:FindFirstChild("Gun") then
+        return "Sheriff"
+    end
+    return "Innocent"
+end
+
+
+local function createSliderLogic(slider, fill, handle, valueLabel, setting)
+    local dragging = false
+    local min, max = 0, 1000
+    
+    local function updateSlider(input)
+        local relativeX = math.clamp((input.Position.X - slider.AbsolutePosition.X) / slider.AbsoluteSize.X, 0, 1)
+        local value = min + (max - min) * relativeX
+        setting.fov = value
+        fill.Size = UDim2.new(relativeX, 0, 1, 0)
+        handle.Position = UDim2.new(relativeX, -handle.AbsoluteSize.X / 2, 0.5, -handle.AbsoluteSize.Y / 2)
+        valueLabel.Text = "FOV: " .. tostring(math.floor(value))
+    end
+
+    handle.InputBegan:Connect(function(input)
+        if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+            dragging = true
+
+            updateSlider(input) 
+        end
+    end)
+    
+    handle.InputEnded:Connect(function()
+        dragging = false
+    end)
+    
+
+    
+    UserInputService.InputChanged:Connect(function(input)
+        if dragging and (input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch) then
+            updateSlider(input)
+        end
+    end)
+end
+
+createSliderLogic(Slider_AimbotMurder, Fill_AimbotMurder, Handle_AimbotMurder, ValueLabel_AimbotMurder, aimbotSettings.murder)
+createSliderLogic(Slider_AimbotSheriff, Fill_AimbotSheriff, Handle_AimbotSheriff, ValueLabel_AimbotSheriff, aimbotSettings.sheriff)
+
+
+local function updateAimbot()
+    pcall(function()
+        local isAimbotActive = aimbotSettings.murder.enabled or aimbotSettings.sheriff.enabled
+        fovCircle.Visible = isAimbotActive
+        if not isAimbotActive then return end
+
+        local fov = aimbotSettings.murder.enabled and aimbotSettings.murder.fov or aimbotSettings.sheriff.fov
+        local screenCenter = Vector2.new(Camera.ViewportSize.X / 2, Camera.ViewportSize.Y / 2)
+        fovCircle.Radius = fov
+        fovCircle.Position = screenCenter
+        
+        local bestTarget, closestDist = nil, fov
+        
+
+
+        local raycastParams = RaycastParams.new()
+        raycastParams.FilterType = Enum.RaycastFilterType.Blacklist
+        raycastParams.FilterDescendantsInstances = {LocalPlayer.Character}
+
+        for _, player in pairs(Players:GetPlayers()) do
+            if player and player ~= LocalPlayer and player.Character and player.Character:FindFirstChild("Head") and player.Character.Humanoid.Health > 0 then
+                local role = getPlayerRole(player)
+                local shouldTarget = (aimbotSettings.murder.enabled and role == "Murderer") or (aimbotSettings.sheriff.enabled and role == "Sheriff")
+                
+                if shouldTarget then
+                    local headPos, onScreen = Camera:WorldToScreenPoint(player.Character.Head.Position)
+                    if onScreen then
+                        local dist = (Vector2.new(headPos.X, headPos.Y) - screenCenter).Magnitude
+                        if dist < closestDist then
+                  
+                            
+                            local origin = Camera.CFrame.Position
+                            local direction = (player.Character.Head.Position - origin).Unit
+                            local result = workspace:Raycast(origin, direction * 1000, raycastParams)
+                            
+
+                            
+                            if result and result.Instance and (result.Instance:IsDescendantOf(player.Character) or (result.Instance.Parent and result.Instance.Parent:IsDescendantOf(player.Character))) then
+                                bestTarget = player
+                                closestDist = dist
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        
+        if bestTarget and bestTarget.Character and bestTarget.Character:FindFirstChild("Head") then
+        
+
+            
+            local aimSmoothing = 1 
+            local newCFrame = Camera.CFrame:Lerp(CFrame.new(Camera.CFrame.Position, bestTarget.Character.Head.Position), aimSmoothing)
+            Camera.CFrame = newCFrame
+        end
+    end)
+end
+
+
+local function updateCustomESP()
+    pcall(function()
+        for role, data in pairs(customEspSettings) do
+            for player, gui in pairs(data.guis) do
+                if not player or not player.Parent or not data.enabled or not player:IsDescendantOf(Players) then
+                    if gui and gui.Parent then
+                        gui:Destroy()
+                    end
+                    data.guis[player] = nil
+                end
+            end
+        end
+
+        for _, player in pairs(Players:GetPlayers()) do
+            if player and player.Character and player.Character:FindFirstChild("Head") and player ~= LocalPlayer then
+                local role = getPlayerRole(player)
+                local setting = (role == "Murderer" and customEspSettings.murder) or (role == "Sheriff" and customEspSettings.sheriff)
+                
+                if setting and setting.enabled and not setting.guis[player] then
+                    local color = (role == "Murderer") and Color3.new(1, 0, 0) or Color3.new(0, 0, 1)
+                    
+                    local bgui = Instance.new("BillboardGui", player.Character.Head)
+                    bgui.Name = "CustomEGUI"
+                    bgui.AlwaysOnTop = true
+                    bgui.ExtentsOffset = Vector3.new(0, 2.5, 0)
+                    bgui.Size = UDim2.new(0, 200, 0, 50)
+                    
+                    local nam = Instance.new("TextLabel", bgui)
+                    nam.Text = player.Name
+                    nam.BackgroundTransparency = 1
+                    nam.TextSize = 15
+                    nam.Font = Enum.Font.GothamBold
+                    nam.TextColor3 = color
+                    nam.Size = UDim2.new(1, 0, 1, 0)
+                    
+                    setting.guis[player] = bgui
+                end
+            end
+        end
+    end)
+end
+
+Activation_AimbotMurder.MouseButton1Click:Connect(function()
+    aimbotSettings.murder.enabled = not aimbotSettings.murder.enabled
+    toggleButton(Activation_AimbotMurder, aimbotSettings.murder.enabled)
+    if aimbotSettings.murder.enabled then
+        aimbotSettings.sheriff.enabled = false
+        toggleButton(Activation_AimbotSheriff, false)
+    end
+end)
+
+Activation_AimbotSheriff.MouseButton1Click:Connect(function()
+    aimbotSettings.sheriff.enabled = not aimbotSettings.sheriff.enabled
+    toggleButton(Activation_AimbotSheriff, aimbotSettings.sheriff.enabled)
+    if aimbotSettings.sheriff.enabled then
+        aimbotSettings.murder.enabled = false
+        toggleButton(Activation_AimbotMurder, false)
+    end
+end)
+
+Activation_EspMurder.MouseButton1Click:Connect(function()
+    customEspSettings.murder.enabled = not customEspSettings.murder.enabled
+    toggleButton(Activation_EspMurder, customEspSettings.murder.enabled)
+end)
+
+Activation_EspSheriff.MouseButton1Click:Connect(function()
+    customEspSettings.sheriff.enabled = not customEspSettings.sheriff.enabled
+    toggleButton(Activation_EspSheriff, customEspSettings.sheriff.enabled)
+end)
+
+RunService.RenderStepped:Connect(updateAimbot)
+RunService.RenderStepped:Connect(updateCustomESP)
